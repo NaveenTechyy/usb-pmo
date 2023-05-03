@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const {t} = useTranslation()
   const [className, setClassName] = useState(false);
 
   const onClassNameChange = () => {
@@ -13,7 +15,7 @@ const Navbar = () => {
     <div className="main-container">
       <div className="logo" title="USBANK PMO">
         <NavLink to="/" className="logo">
-          USBANK PMO
+          {t('usbankPmo')}
         </NavLink>
       </div>
 
@@ -22,7 +24,7 @@ const Navbar = () => {
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
               <NavLink onClick={onClassNameChange} to="/" className="nav-links">
-                Home
+                {t('home')}
               </NavLink>
             </li>
           </ul>
@@ -38,8 +40,8 @@ const Navbar = () => {
         <div class="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/" className="nav-links">
-                Rockets
+              <NavLink onClick={onClassNameChange} to="/canvas" className="nav-links">
+                {t('canvas')}
               </NavLink>
             </li>
           </ul>
@@ -55,8 +57,8 @@ const Navbar = () => {
         <div class="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/" className="nav-links">
-                Launches
+              <NavLink onClick={onClassNameChange} to="/appflows" className="nav-links">
+                {t('appFlows')}
               </NavLink>
             </li>
           </ul>
@@ -72,8 +74,8 @@ const Navbar = () => {
         <div class="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/" className="nav-links">
-                History
+              <NavLink onClick={onClassNameChange} to="/users" className="nav-links">
+                {t('users')}
               </NavLink>
             </li>
           </ul>
@@ -89,8 +91,8 @@ const Navbar = () => {
         <div class="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/" className="nav-links">
-                Details
+              <NavLink onClick={onClassNameChange} to="/new-appflows" className="nav-links">
+                {t('newAppFlows')}
               </NavLink>
             </li>
           </ul>
@@ -105,7 +107,7 @@ const Navbar = () => {
       </div>
 
       <div className="user">
-        <h2>Hello, Naveen Kumar</h2>
+        <p>Hello, Naveen</p>
       </div>
 
       <div onClick={onClassNameChange} className="hamburger-toggle">
