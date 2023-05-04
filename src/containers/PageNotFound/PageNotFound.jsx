@@ -6,7 +6,7 @@ const PageNotFound = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="container">{t("pageNotFound")}</div>
+      <div className="errorpage-container">{t("pageNotFound")}</div>
     </>
   );
 };
