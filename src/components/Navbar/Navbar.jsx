@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 
@@ -14,18 +13,18 @@ const Navbar = () => {
   return (
     <div className="main-container">
       <div className="title" title="USBANK PMO">
-        <NavLink to="/">
+        <a href="/">
           {t('usbankPmo')}
-        </NavLink>
+        </a>
       </div>
 
       <div className="lists">
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/" className="nav-links">
+              <a onClick={onClassNameChange} href="/" className="nav-links">
                 {t('home')}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -40,9 +39,9 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/canvas" className="nav-links">
+              <a onClick={onClassNameChange} href="/canvas" className="nav-links">
                 {t('canvas')}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -57,9 +56,9 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/appflows" className="nav-links">
+              <a onClick={onClassNameChange} href="/appflows" className="nav-links">
                 {t('appFlows')}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -74,9 +73,9 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/users" className="nav-links">
+              <a onClick={onClassNameChange} href="/users" className="nav-links">
                 {t('users')}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -91,9 +90,9 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/new-appflows" className="nav-links">
+              <a onClick={onClassNameChange} href="/new-appflows" className="nav-links">
                 {t('newAppFlows')}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
