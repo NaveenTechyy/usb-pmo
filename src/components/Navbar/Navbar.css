@@ -5,11 +5,14 @@
   color: #fff;
 }
 
-.logo {
-  color: #fff;
-  font-size: 20px;
+.title {
   margin: 10px 5px;
+}
+
+.title a {
   text-decoration: none;
+  color: #fff;
+  font-size: 25px;
   letter-spacing: 1px;
   white-space: nowrap;
 }
@@ -18,8 +21,12 @@
   white-space: nowrap;
 }
 
+.user {
+  align-self: right;
+}
+
 .user p {
-  margin: 10px 0 10px 80px;
+  margin: 10px 0 10px 100px;
   white-space: nowrap;
 }
 
@@ -32,7 +39,7 @@
 }
 
 .nav-links {
-  font-size: 18px;
+  font-size: 16px;
   position: relative;
   color: #fff;
   text-decoration: none;
@@ -77,7 +84,6 @@
 .links {
   letter-spacing: 2px;
   margin-left: 40px;
-  font-weight: bold;
   white-space: nowrap;
 }
 
@@ -89,7 +95,7 @@
   .main-container {
     min-height: 60px;
   }
-  .logo {
+  .title {
     margin: 5px 0 0 10px;
     flex: 1;
   }
