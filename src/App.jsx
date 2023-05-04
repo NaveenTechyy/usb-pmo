@@ -8,8 +8,8 @@ import "./locales/index";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./containers/Home/Home";
-import Card from "./components/Card/Card";
-import CardTwo from "./components/Card/CardTwo";
+import Card from "./containers/Card/Card";
+import CardTwo from "./containers/Card/CardTwo";
 import PageNotFound from "./containers/PageNotFound/PageNotFound";
 
 const App = () => {
