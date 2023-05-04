@@ -12,7 +12,7 @@ const AppCrash = ({ error, errorInfo }) => {
   };
 
   return (
-    <div className="container">
+    <div className="fallback-container">
       <p>{t("errorMsg")}</p>
 
       <button className="error-btn" onClick={handleErrorDisplay}>
