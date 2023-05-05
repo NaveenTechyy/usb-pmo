@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const [className, setClassName] = useState(false);
 
   const onClassNameChange = () => {
@@ -14,9 +14,7 @@ const Navbar = () => {
   return (
     <div className="main-container">
       <div className="title" title="USBANK PMO">
-        <NavLink to="/">
-          {t('usbankPmo')}
-        </NavLink>
+        <NavLink to="/">{t("usbankPmo")}</NavLink>
       </div>
 
       <div className="lists">
@@ -24,7 +22,7 @@ const Navbar = () => {
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
               <NavLink onClick={onClassNameChange} to="/" className="nav-links">
-                {t('dashboard')}
+                {t("dashboard")}
               </NavLink>
             </li>
           </ul>
@@ -40,8 +38,12 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/canvas" className="nav-links">
-                {t('easMasterList')}
+              <NavLink
+                onClick={onClassNameChange}
+                to="/easMasterList"
+                className="nav-links"
+              >
+                {t("easMasterList")}
               </NavLink>
             </li>
           </ul>
@@ -57,8 +59,12 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/appflows" className="nav-links">
-                {t('projectTeam')}
+              <NavLink
+                onClick={onClassNameChange}
+                to="/projectTeam"
+                className="nav-links"
+              >
+                {t("projectTeam")}
               </NavLink>
             </li>
           </ul>
@@ -74,8 +80,12 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/users" className="nav-links">
-                {t('myTasks')}
+              <NavLink
+                onClick={onClassNameChange}
+                to="/myTasks"
+                className="nav-links"
+              >
+                {t("myTasks")}
               </NavLink>
             </li>
           </ul>
@@ -91,8 +101,12 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/new-appflows" className="nav-links">
-                {t('reports')}
+              <NavLink
+                onClick={onClassNameChange}
+                to="/reports"
+                className="nav-links"
+              >
+                {t("reports")}
               </NavLink>
             </li>
           </ul>
