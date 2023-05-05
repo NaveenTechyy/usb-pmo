@@ -1,6 +1,7 @@
 .main-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: #0c2074;
   color: #fff;
 }
@@ -26,7 +27,7 @@
 }
 
 .user p {
-  margin: 10px 0 10px 50px;
+  margin: 10px 0 10px 250px;
   white-space: nowrap;
 }
 
@@ -85,6 +86,12 @@
   letter-spacing: 2px;
   margin-left: 40px;
   white-space: nowrap;
+  
+}
+
+.title img{
+  width: 175px;
+  height: 100px;
 }
 
 @media screen and (max-width: 1180px) {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Navbar.css";
+import USBLogo from "../../assets/USBLogo.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -13,8 +14,9 @@ const Navbar = () => {
 
   return (
     <div className="main-container">
-      <div className="title" title="USBANK PMO">
-        <NavLink to="/">{t("usbankPmo")}</NavLink>
+      <div className="title">
+      <img src={USBLogo} alt='USBank Logo'/>
+        <NavLink to="/"></NavLink>
       </div>
 
       <div className="lists">
