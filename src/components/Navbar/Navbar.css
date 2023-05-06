@@ -86,12 +86,12 @@
   letter-spacing: 2px;
   margin-left: 40px;
   white-space: nowrap;
-  
 }
 
-.title img{
+.title img {
   width: 175px;
   height: 100px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1180px) {

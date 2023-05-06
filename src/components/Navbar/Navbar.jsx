@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 import USBLogo from "../../assets/USBLogo.png";
@@ -15,17 +14,18 @@ const Navbar = () => {
   return (
     <div className="main-container">
       <div className="title">
-      <img src={USBLogo} alt='USBank Logo'/>
-        <NavLink to="/"></NavLink>
+        <a href="/">
+          <img src={USBLogo} alt="USBank Logo" />
+        </a>
       </div>
 
       <div className="lists">
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink onClick={onClassNameChange} to="/" className="nav-links">
+              <a onClick={onClassNameChange} href="/" className="nav-links">
                 {t("dashboard")}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -40,13 +40,13 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink
+              <a
                 onClick={onClassNameChange}
-                to="/easMasterList"
+                href="/easMasterList"
                 className="nav-links"
               >
                 {t("easMasterList")}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -61,13 +61,13 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink
+              <a
                 onClick={onClassNameChange}
-                to="/projectTeam"
+                href="/projectTeam"
                 className="nav-links"
               >
                 {t("projectTeam")}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -82,13 +82,13 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink
+              <a
                 onClick={onClassNameChange}
-                to="/myTasks"
+                href="/myTasks"
                 className="nav-links"
               >
                 {t("myTasks")}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
@@ -103,13 +103,13 @@ const Navbar = () => {
         <div className="dropdown">
           <ul className={className ? "navlinks active" : "navlinks"}>
             <li className="links">
-              <NavLink
+              <a
                 onClick={onClassNameChange}
-                to="/reports"
+                href="/reports"
                 className="nav-links"
               >
                 {t("reports")}
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="dropdown-content">
